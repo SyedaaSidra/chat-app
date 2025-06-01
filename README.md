@@ -8,7 +8,7 @@ A simple and elegant real-time chat application built with **React** and **Socke
 ) 
 ![Chat App Screenshot](frontend/src/assets/chat-2.png
 ) 
-![Chat App Screenshot](frontend/src/assets/chat-2.png
+![Chat App Screenshot](frontend/src/assets/chat-3.png
 ) 
 
 ## 🚀 Features
