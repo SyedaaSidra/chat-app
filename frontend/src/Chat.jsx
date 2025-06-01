@@ -93,7 +93,13 @@ const Chat = () => {
             {messages.map((msg) => (
               <motion.div
                 key={msg.id}
-                className={msg.system ? "system-message" : "message"}
+                className={
+                  msg.system
+                    ? "system-message"
+                    : msg.username === username
+                    ? "message you"
+                    : "message"
+                }
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3 }}
@@ -102,7 +108,10 @@ const Chat = () => {
                   <span className="system-message">{msg.text}</span>
                 ) : (
                   <div className="user-message">
-                    <span className="username">{msg.username}:</span>
+                    <span className="username">
+                      {" "}
+                      {msg.username === username ? "You" : msg.username}:
+                    </span>
                     <span className="message-text">{msg.text}</span>
                   </div>
                 )}

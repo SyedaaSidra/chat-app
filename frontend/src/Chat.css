@@ -96,3 +96,10 @@
   margin: 10px 0;
   text-align: left;
 }
+.message.you {
+  background-color: #d1e7ff;
+  align-self: flex-end;
+  text-align: right;
+  font-weight: bold;
+  border: 1px solid #3399ff;
+}
